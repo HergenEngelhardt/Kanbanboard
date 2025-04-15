@@ -317,7 +317,7 @@ textarea {
 }
 
 #clearButton:hover {
-    background: url(Assets/addTask/iconoir_cancel.svg) no-repeat;
+    background: url(../Assets/addTask/iconoir_cancel.svg) no-repeat;
     background-position: 68px 14px;
     border-color: #29ABE2;
     color: #29ABE2;

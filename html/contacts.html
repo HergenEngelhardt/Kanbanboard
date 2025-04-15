@@ -5,25 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="shortcut icon" href="Assets/joinLogo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="styles/navbar.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="styles/contactButton.css">
-    <link rel="stylesheet" href="styles/contactOverlay.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/responsive/mainResponsive.css">
-    <link rel="stylesheet" href="styles/responsive/contactResponsive.css">
-    <link rel="stylesheet" href="styles/responsive/contactOverlayResponsive.css">
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/responsive/NavbarResponsive.css">
-    <link rel="stylesheet" href="styles/responsive/navbarLoggedInResponsive.css">
-    <script src="script/header.js" defer></script>
+    <link rel="shortcut icon" href="../Assets/joinLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/contact.css">
+    <link rel="stylesheet" href="../styles/contactButton.css">
+    <link rel="stylesheet" href="../styles/contactOverlay.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/responsive/mainResponsive.css">
+    <link rel="stylesheet" href="../styles/responsive/contactResponsive.css">
+    <link rel="stylesheet" href="../styles/responsive/contactOverlayResponsive.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/responsive/NavbarResponsive.css">
+    <link rel="stylesheet" href="../styles/responsive/navbarLoggedInResponsive.css">
+    <script src="../script/header.js" defer></script>
 </head>
 
 <body onload="loadContacts()">
-    <header w3-include-html="templates/header.html"></header>
-    <aside w3-include-html="templates/navbarLoggedIn.html"></aside>
+    <header w3-include-html="../templates/header.html"></header>
+    <aside w3-include-html="../templates/navbarLoggedIn.html"></aside>
 
     <div id="contactBackgroundOverlay" class="background-overlay dNone" onclick="closeContactOverlayBackground(event)"></div>
 
@@ -41,7 +41,7 @@
                 </article>
 
                 <div class="back-arrow">
-                    <img id="back-arrow" src="Assets/arrowLeft.svg" alt="Back" style="display: none;">
+                    <img id="back-arrow" src="../Assets/arrowLeft.svg" alt="Back" style="display: none;">
                 </div>
 
                 <section id="contact-details" class="contact-details" style="display: none;">
@@ -51,11 +51,11 @@
                             <span class="contact-name" id="contact-name"></span>
                             <div class="editSection" id="editSectionForToggle">
                                 <a href="#" class="edit-link" onclick="closeContactOverlay(event)">
-                                    <img src="Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit Icon"
+                                    <img src="../Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit Icon"
                                         class="icon"> Edit
                                 </a>
                                 <a href="#" class="delete-link">
-                                    <img src="Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
+                                    <img src="../Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg"
                                         alt="Delete Icon" class="icon" onclick="handleDeleteContact()"> Delete
                                 </a>
                             </div>
@@ -70,7 +70,7 @@
                         <strong>Phone:</strong>
                         <p id="contact-phone"></p>
                         <div class="dots-icon cursorPointer" id="dots-icon" onclick="toggleOptions()">
-                            <img src="Assets/dots.png" alt="Options">
+                            <img src="../Assets/dots.png" alt="Options">
                         </div>
                     </div>
                 </section>
@@ -81,14 +81,14 @@
     <div id="overlay" class="overlay">
         <div class="overlay-content">
             <div class="left-section">
-                <img class="left-sectionImg" src="Assets/JoinLogoWhite.svg" alt="Join Logo">
+                <img class="left-sectionImg" src="../Assets/JoinLogoWhite.svg" alt="Join Logo">
                 <h2>Add Contact</h2>
                 <p>Tasks are easier with a team!</p>
             </div>
             <div class="right-section">
                 <a href="#" id="close-overlay" class="close-button" aria-label="Close Overlay">X</a>
                 <div class="right-section-flex">
-                    <img src="Assets/person.svg" class="centered-image" alt="Person Icon">
+                    <img src="../Assets/person.svg" class="centered-image" alt="Person Icon">
                     <form id="contact-form" class="contact-form" aria-labelledby="Add Contact Form">
                         <input type="text" id="name" placeholder="Name" required />
                         <input type="email" id="email" placeholder="Email" required />
@@ -106,7 +106,7 @@
     <div id="contact-overlay" style="display: none;">
         <div class="contact-overlay-content">
             <div class="contactOverlayLeft">
-                <img class="left-sectionImg" src="Assets/JoinLogoWhite.svg" alt="Join Logo">
+                <img class="left-sectionImg" src="../Assets/JoinLogoWhite.svg" alt="Join Logo">
                 <h2>Edit Contact</h2>
             </div>
             <div class="contactOverlayRight">
@@ -132,12 +132,12 @@
     <script>
         w3.includeHTML();
     </script>
-    <script src="script/contacts.js" defer></script>
-    <script src="script/contactHelpers.js" defer></script>
-    <script src="script/contactsOverlay.js" defer></script>
-    <script src="script/contactsManipulation.js" defer></script>
-    <script src="script/contactManagement.js" defer></script>
-    <script src="script/contactsDisplay.js" defer></script>
+    <script src="../script/contacts.js" defer></script>
+    <script src="../script/contactHelpers.js" defer></script>
+    <script src="../script/contactsOverlay.js" defer></script>
+    <script src="../script/contactsManipulation.js" defer></script>
+    <script src="../script/contactManagement.js" defer></script>
+    <script src="../script/contactsDisplay.js" defer></script>
 </body>
 
 </html>
