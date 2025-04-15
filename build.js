@@ -4,7 +4,7 @@ const path = require('path');
 const publicDir = path.join(__dirname, 'public');
 const htmlDir = path.join(__dirname, 'html');
 
-// Create public directory if it doesn't exist
+
 if (!fs.existsSync(publicDir)) {
   fs.mkdirSync(publicDir);
   console.log('Created public directory.');
@@ -12,7 +12,7 @@ if (!fs.existsSync(publicDir)) {
   console.log('Public directory already exists.');
 }
 
-// Directories to copy
+
 const dirsToCopy = ['Assets', 'styles', 'script', 'templates', 'fonts'];
 
 dirsToCopy.forEach(dir => {
@@ -30,7 +30,7 @@ dirsToCopy.forEach(dir => {
   }
 });
 
-// Copy HTML files from 'html' directory to the root of 'public'
+
 if (fs.existsSync(htmlDir)) {
   try {
     const files = fs.readdirSync(htmlDir);
