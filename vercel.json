@@ -1,0 +1,12 @@
+{
+    "rewrites": [
+      { "source": "/", "destination": "/html/login.html" },
+      { "source": "/login", "destination": "/html/login.html" },
+      { "source": "/board", "destination": "/html/board.html" },
+      { "source": "/styles/:path*", "destination": "/styles/:path*" },
+      { "source": "/script/:path*", "destination": "/script/:path*" },
+      { "source": "/Assets/:path*", "destination": "/Assets/:path*" },
+      { "source": "/templates/:path*", "destination": "/templates/:path*" },
+      { "source": "/html/:path*", "destination": "/html/:path*" }
+    ]
+  }
