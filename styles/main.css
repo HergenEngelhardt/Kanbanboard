@@ -37,5 +37,5 @@ body::-webkit-scrollbar-button {
     font-family: 'Inter';
     font-style: 'regular';
     font-weight: 400;
-    src: url('./fonts/static/Inter_24pt-Regular.ttf') format('woff2');
+    src: url('../fonts/static/Inter_24pt-Regular.ttf') format('woff2');
 }

@@ -1,8 +1,8 @@
 let selectedPrio = null;
 let prioOptions = [
-    { class: "urgent", label: "Urgent", src: "./Assets/addTask/Prio alta.svg", activeSrc: "./Assets/addTask/Prio_alta_white.svg" },
-    { class: "medium", label: "Medium", src: "./Assets/addTask/Prio media.svg", activeSrc: "./Assets/addTask/Prio media white.svg" },
-    { class: "low", label: "Low", src: "./Assets/addTask/Prio baja.svg", activeSrc: "./Assets/addTask/Prio_baja_white.svg" }
+    { class: "urgent", label: "Urgent", src: "../Assets/addTask/Prio alta.svg", activeSrc: "../Assets/addTask/Prio_alta_white.svg" },
+    { class: "medium", label: "Medium", src: "../Assets/addTask/Prio media.svg", activeSrc: "../Assets/addTask/Prio media white.svg" },
+    { class: "low", label: "Low", src: "../Assets/addTask/Prio baja.svg", activeSrc: "../Assets/addTask/Prio_baja_white.svg" }
 ];
 
 

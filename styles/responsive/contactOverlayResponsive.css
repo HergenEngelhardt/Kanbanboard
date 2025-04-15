@@ -49,7 +49,7 @@
         top: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-image: url('./Assets/person.svg');
+        background-image: url('../Assets/person.svg');
         background-size: contain;
         background-repeat: no-repeat;
         z-index: 2;

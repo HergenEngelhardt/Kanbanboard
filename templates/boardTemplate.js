@@ -48,11 +48,11 @@ function getTaskBoardTemplate(category, task, taskId, contactList, taskClass, su
  */
 function getPrioritySymbol(priority) {
     if (priority === "urgent") {
-        return "<img src='./Assets/addTask/Prio alta.svg' class='priority-icon'>";
+        return "<img src='../Assets/addTask/Prio alta.svg' class='priority-icon'>";
     } else if (priority === "medium") {
-        return "<img src='./Assets/medium.svg' alt='Medium Priority' class='priority-icon'>";
+        return "<img src='../Assets/medium.svg' alt='Medium Priority' class='priority-icon'>";
     } else if (priority === "low") {
-        return "<img src='./Assets/addTask/Prio baja.svg' alt='Low Priority' class='priority-icon'>";
+        return "<img src='../Assets/addTask/Prio baja.svg' alt='Low Priority' class='priority-icon'>";
     }
     return "";
 }
@@ -105,11 +105,11 @@ function getBoardOverlayTemplate(category, task) {
                </div>
                <div class="action-links">
                    <a href="javascript:void(0);" onclick="deleteTask('${category}', '${task.id}')" class="action-link delete-link">
-                       <img src="./Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Delete" class="link-icon">
+                       <img src="../Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Delete" class="link-icon">
                        Delete
                    </a>
                    <a href="javascript:void(0);" onclick="editTask('${task.id}', '${category}'); toggleEditMode(true)" class="action-link edit-link">
-                       <img src="./Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit" class="link-icon">
+                       <img src="../Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit" class="link-icon">
                        Edit
                    </a>
                </div>
@@ -304,7 +304,7 @@ function generateSubtaskInputHTML(taskId, category) {
             <input type="text" id="newSubtaskInput" placeholder="Add new subtask" autocomplete="off">
             <div class="seperatorSubtaskEditInput"></div>
             <img id="addSubtaskButton" class="subtaskImg cursorPointer" 
-                src="./Assets/addTask/Property 1=add.svg" alt="Add" 
+                src="../Assets/addTask/Property 1=add.svg" alt="Add" 
                 onclick="addNewSubtask('${taskId}', '${category}')">
         </div>
     `;
@@ -328,10 +328,10 @@ function generateSubtaskTemplate(task, category) {
             <div class="testForLi">
                 <ul>•<span class="editSubtaskText" contenteditable="true">${subtask.text}</span></ul>
                 <div class="subtask-icons">
-                    <img class="editSubtask" src="./Assets/addTask/Property 1=edit.svg" alt="Edit"
+                    <img class="editSubtask" src="../Assets/addTask/Property 1=edit.svg" alt="Edit"
                         onclick="editSubtaskEdit('${task.id}', '${category}', ${index})">
                     <div class="seperatorSubtaskIcons"></div>
-                    <img class="deleteSubtask" src="./Assets/addTask/Property 1=delete.svg" alt="Delete"
+                    <img class="deleteSubtask" src="../Assets/addTask/Property 1=delete.svg" alt="Delete"
                         onclick="deleteSubtask('${task.id}', '${category}', ${index})">
                 </div>    
             </div>
@@ -359,10 +359,10 @@ function generateSubtaskHTML(subtaskText, taskId, category, index) {
              •<span class="editSubtaskText" contenteditable="true">${subtaskText}</span>
          </ul>
          <div class="subtask-icons">
-             <img class="editSubtask" src="./Assets/addTask/Property 1=edit.svg" alt="Edit" data-task-id="${taskId}"
+             <img class="editSubtask" src="../Assets/addTask/Property 1=edit.svg" alt="Edit" data-task-id="${taskId}"
                  data-category="${category}" data-index="${index}">
              <div class="seperatorSubtaskIcons"></div>
-             <img class="deleteSubtask" src="./Assets/addTask/Property 1=delete.svg" alt="Delete"
+             <img class="deleteSubtask" src="../Assets/addTask/Property 1=delete.svg" alt="Delete"
                  data-task-id="${taskId}" data-category="${category}" data-index="${index}">
          </div>
      </div>
