@@ -59,9 +59,9 @@ function clearColumns() {
  * @returns {string} - Path to the priority icon.
  */
 function getPrioIcon(prio) {
-    if (prio === "urgent") return "../../Assets/addTask/Prio alta.svg";
-    if (prio === "medium") return "../../Assets/addTask/Prio media.svg";
-    return "../../Assets/addTask/Prio baja.svg";
+    if (prio === "urgent") return "Assets/addTask/Prio alta.svg";
+    if (prio === "medium") return "Assets/addTask/Prio media.svg";
+    return "Assets/addTask/Prio baja.svg";
 }
 
 
