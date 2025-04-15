@@ -30,7 +30,7 @@ function generateAddButtonLargeHTML() {
     return /*HTML*/`
         <div class="add-contact-button" id="show-overlay" onclick="closeContactOverlay(event)">
             <span>Add New Contact</span>
-            <img src=".././Assets/personAdd.svg" alt="Add Contact" class="add-icon" />
+            <img src="../../Assets/personAdd.svg" alt="Add Contact" class="add-icon" />
         </div>`;
 }
 
@@ -42,7 +42,7 @@ function generateAddButtonLargeHTML() {
 function generateAddButtonSmallHTML() {
     return `
         <div class="add-contact-icon" id="add-contact-icon">
-            <img src=".././Assets/personAdd.svg" alt="Add Contact">
+            <img src="../../Assets/personAdd.svg" alt="Add Contact">
         </div>`;
 }
 
@@ -328,10 +328,10 @@ function generateEditSectionHTML(currentContactId) {
     return /*HTML*/`
         <div class="editSection dNone" id="edit-section-small-contact">
             <a href="#" class="edit-link" onclick="handleEditLinkClick()">
-                <img src=".././Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit Icon" class="icon"> Edit
+                <img src="../../Assets/edit_21dp_5F6368_FILL0_wght400_GRAD0_opsz20.svg" alt="Edit Icon" class="icon"> Edit
             </a>
             <a href="#" class="delete-link" onclick="handleDeleteContact()">
-                <img src=".././Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Delete Icon" class="icon"> Delete
+                <img src="../../Assets/delete_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg" alt="Delete Icon" class="icon"> Delete
             </a>
         </div>`;
 }
