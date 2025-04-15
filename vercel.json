@@ -1,17 +1,17 @@
 {
     "rewrites": [
-      { "source": "/", "destination": "/html/login.html" },
-      { "source": "/login", "destination": "/html/login.html" },
-      { "source": "/board", "destination": "/html/board.html" },
-      { "source": "/summary", "destination": "/html/summary.html" },
-      { "source": "/contacts", "destination": "/html/contacts.html" },
-      { "source": "/addTask", "destination": "/html/addTask.html" },
-      { "source": "/help", "destination": "/html/help.html" },
-      { "source": "/policy", "destination": "/html/policy.html" },
-      { "source": "/legalNotice", "destination": "/html/legalNotice.html" },
-      { "source": "/signUp", "destination": "/html/signUp.html" }
+      { "source": "/", "destination": "/login.html" },
+      { "source": "/login", "destination": "/login.html" },
+      { "source": "/board", "destination": "/board.html" },
+      { "source": "/summary", "destination": "/summary.html" },
+      { "source": "/contacts", "destination": "/contacts.html" },
+      { "source": "/addTask", "destination": "/addTask.html" },
+      { "source": "/help", "destination": "/help.html" },
+      { "source": "/policy", "destination": "/policy.html" },
+      { "source": "/legalNotice", "destination": "/legalNotice.html" },
+      { "source": "/signUp", "destination": "/signUp.html" }
     ],
     "trailingSlash": false,
-    "buildCommand": "cp -r Assets public/ && cp -r styles public/ && cp -r script public/ && cp -r templates public/ && cp -r fonts public/ 2>/dev/null || true",
+    "buildCommand": "node build.js",
     "outputDirectory": "public"
   }
