@@ -151,7 +151,7 @@ function logout() {
     if (userIcon) {
         userIcon.textContent = 'G';
     }
-    window.location.href = '/html/login.html';
+    window.location.href = '.././html/login.html';
     resetUserInfo();
 }
 

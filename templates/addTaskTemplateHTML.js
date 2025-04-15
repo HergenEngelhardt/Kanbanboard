@@ -10,13 +10,13 @@ function createSubtaskElementHTML(subtaskText, subtaskDivId, subtaskUlId, subtas
             <div class="flex">
                 <div>
                     <img class="editSubtask subtaskImg cursorPointer" 
-                         src="/Assets/addTask/Property 1=edit.svg" 
+                         src=".././Assets/addTask/Property 1=edit.svg" 
                          alt="Edit" onclick="editSubtask('${subtaskDivId}')">
                 </div>
                 <div class="seperatorSubtasks"></div>
                 <div>
                     <img class="deleteSubtask subtaskImg cursorPointer"
-                         src="/Assets/addTask/Property 1=delete.svg" 
+                         src=".././Assets/addTask/Property 1=delete.svg" 
                          alt="Delete" onclick="deleteSubtask('${subtaskDivId}')">
                 </div>
             </div>
@@ -27,10 +27,10 @@ function createSubtaskElementHTML(subtaskText, subtaskDivId, subtaskUlId, subtas
 function editSubtaskHTML(subtaskDivId, editSubtask) {
     return /*HTML*/ `
         <input id="editSubtask_${subtaskDivId}" type="text" value="${editSubtask}" onblur="updateSubtaskText(this)">
-        <img class="deleteSubtask subtaskImg cursorPointer" src="/Assets/addTask/Property 1=delete.svg" alt=""
+        <img class="deleteSubtask subtaskImg cursorPointer" src=".././Assets/addTask/Property 1=delete.svg" alt=""
             onclick="deleteSubtask('${subtaskDivId}')">
         <img id="acceptSubtask_${subtaskDivId}" class="acceptSubtask cursorPointer subtaskImg"
-            src="/Assets/addTask/Property 1=check.svg" alt="" onclick="acceptSubtask('${subtaskDivId}')">
+            src=".././Assets/addTask/Property 1=check.svg" alt="" onclick="acceptSubtask('${subtaskDivId}')">
  `;
 }
 
@@ -42,12 +42,12 @@ function subtaskChangeHTML(subtaskDivId, subtaskValue) {
         </ul>
         <div class="flex">
             <div>
-                <img class="editSubtask subtaskImg cursorPointer" src="/Assets/addTask/Property 1=edit.svg" alt="Edit"
+                <img class="editSubtask subtaskImg cursorPointer" src=".././Assets/addTask/Property 1=edit.svg" alt="Edit"
                     onclick="editSubtask('${subtaskDivId}')">
             </div>
             <div class="seperatorSubtasks"></div>
             <div>
-                <img class="deleteSubtask subtaskImg cursorPointer" src="/Assets/addTask/Property 1=delete.svg"
+                <img class="deleteSubtask subtaskImg cursorPointer" src=".././Assets/addTask/Property 1=delete.svg"
                     alt="Delete" onclick="deleteSubtask('${subtaskDivId}')">
             </div>
         </div>`;
@@ -67,7 +67,7 @@ function popUpAddTaskHTML() {
     return /*HTML*/`
         <div class="space-evently flex">
         <p>Task added to board</p>
-        <img src="/Assets/addTask/Icons.svg" alt="">
+        <img src=".././Assets/addTask/Icons.svg" alt="">
     </div>`;
 }
 
