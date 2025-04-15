@@ -5,47 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Board</title>
-    <link rel="shortcut icon" href="/Assets/joinLogo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="../Assets/joinLogo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
 
-    <link rel="stylesheet" href="/styles/header.css">
-    <link rel="stylesheet" href="/styles/navbar.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
 
-    <link rel="stylesheet" href="/styles/board.css">
-    <link rel="stylesheet" href="/styles/boardOverlay.css">
-    <link rel="stylesheet" href="/styles/responsive/boardResponsive.css">
-    <link rel="stylesheet" href="/styles/responsive/NavbarResponsive.css">
-    <link rel="stylesheet" href="/styles/addTask.css">
-    <link rel="stylesheet" href="/styles/responsive/addTaskResponsive.css">
-    <link rel="stylesheet" href="/styles/boardOverlayEdit.css">
-    <link rel="stylesheet" href="/styles/responsive/boardOverlayResponsive.css">
-    <link rel="stylesheet" href="/styles/contactButton.css">
-    <link rel="stylesheet" href="/styles/responsive/navbarLoggedInResponsive.css">
+    <link rel="stylesheet" href="../styles/board.css">
+    <link rel="stylesheet" href="../styles/boardOverlay.css">
+    <link rel="stylesheet" href="../styles/responsive/boardResponsive.css">
+    <link rel="stylesheet" href="../styles/responsive/NavbarResponsive.css">
+    <link rel="stylesheet" href="../styles/addTask.css">
+    <link rel="stylesheet" href="../styles/responsive/addTaskResponsive.css">
+    <link rel="stylesheet" href="../styles/boardOverlayEdit.css">
+    <link rel="stylesheet" href="../styles/responsive/boardOverlayResponsive.css">
+    <link rel="stylesheet" href="../styles/contactButton.css">
+    <link rel="stylesheet" href="../styles/responsive/navbarLoggedInResponsive.css">
 
-    <script src="/script/header.js"></script>
-    <script src="/templates/boardTemplate.js"></script>
-    <script src="/script/boardSearch.js"></script>
-    <script src="/script/boardPopUp.js"></script>
-    <script src="/script/contacts.js" defer></script>
-    <script src="/script/addTask.js" defer></script>
-    <script src="/templates/addTaskTemplateHTML.js" defer></script>
-    <script src="/script/addTaskContactDropdown.js" defer></script>
-    <script src="/script/addTaskPrio.js" defer></script>
-    <script src="/script/addTaskSubtask.js" defer></script>
-    <script src="/script/addTaskFirebase.js" defer></script>
-    <script src="/script/addTaskFormHandling.js" defer></script>
-    <script src="/script/boardPopUpEdit.js" defer></script>
-    <script src="/script/boardPopUpDelete.js" defer></script>
-    <script src="/script/boardProgressbar.js" defer></script>
-    <script src="/script/boardSaveChanges.js" defer></script>
-    <script src="/script/boardPopUpEditTask.js" defer></script>
-    <script src="/script/boardPopUpEditSubtask.js" defer></script>
-    <script src="/script/boardPopUpEditContacts.js" defer></script>
-    <script src="/script/contactsDisplay.js" defer></script>
+    <script src="../script/header.js"></script>
+    <script src="../templates/boardTemplate.js"></script>
+    <script src="../script/boardSearch.js"></script>
+    <script src="../script/boardPopUp.js"></script>
+    <script src="../script/contacts.js" defer></script>
+    <script src="../script/addTask.js" defer></script>
+    <script src="../templates/addTaskTemplateHTML.js" defer></script>
+    <script src="../script/addTaskContactDropdown.js" defer></script>
+    <script src="../script/addTaskPrio.js" defer></script>
+    <script src="../script/addTaskSubtask.js" defer></script>
+    <script src="../script/addTaskFirebase.js" defer></script>
+    <script src="../script/addTaskFormHandling.js" defer></script>
+    <script src="../script/boardPopUpEdit.js" defer></script>
+    <script src="../script/boardPopUpDelete.js" defer></script>
+    <script src="../script/boardProgressbar.js" defer></script>
+    <script src="../script/boardSaveChanges.js" defer></script>
+    <script src="../script/boardPopUpEditTask.js" defer></script>
+    <script src="../script/boardPopUpEditSubtask.js" defer></script>
+    <script src="../script/boardPopUpEditContacts.js" defer></script>
+    <script src="../script/contactsDisplay.js" defer></script>
 
 <body onload="initializeBoard()">
-    <aside w3-include-html="/templates/header.html"></aside>
-    <aside w3-include-html="/templates/navbarLoggedIn.html"></aside>
+    <aside w3-include-html="../templates/header.html"></aside>
+    <aside w3-include-html="../templates/navbarLoggedIn.html"></aside>
 
     <main class="main-content">
         <div id="popUpTaskOnBoard" class="flex">
@@ -53,9 +53,9 @@
                 <div class="dialogBackground" onclick="closeTaskOnBoard(event)">
                     <div class="taskBackground" onclick="dontClose(event)">
                         <div class="flex-end">
-                            <img id="closeAddTaskOnBoard" onclick="closeTaskOnBoard(event)" class="cursorPointer" src="/Assets/addTask/close.svg" alt="">
+                            <img id="closeAddTaskOnBoard" onclick="closeTaskOnBoard(event)" class="cursorPointer" src="../Assets/addTask/close.svg" alt="">
                         </div>
-                        <section onclick="dontClose(event)" w3-include-html="/templates/addTaskTemplate.html"></section>
+                        <section onclick="dontClose(event)" w3-include-html="../templates/addTaskTemplate.html"></section>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
                         <div class="searchbarBoard">
                             <input type="search" placeholder="Find task" id="boardSearchbar" oninput="filterTasks()">
                             <div class="seperatorSearchbar"></div>
-                            <img src="/Assets/board/magnifier.svg" alt="magnifier" class="input-icon"
+                            <img src="../Assets/board/magnifier.svg" alt="magnifier" class="input-icon"
                                 onclick="filterTasks()">
                         </div>
                         <button id="buttonAddTask" type="submit" class="cursorPointer"
@@ -80,7 +80,7 @@
 
             <div id="taskBoard">
                 <div class="column-wrapper">
-                    <div class="column-title">To do <img class="cursorPointer" src="/Assets/board/plusButton.svg"
+                    <div class="column-title">To do <img class="cursorPointer" src="../Assets/board/plusButton.svg"
                             alt="plus button" onclick="addTaskOnBoard(), loadContactsForDropdown()">
                     </div>
                     <div class="column" id="toDoColumn">
@@ -88,7 +88,7 @@
                 </div>
                 <div class="column-wrapper">
                     <div class="column-title">In progress <img class="cursorPointer"
-                            src="/Assets/board/plusButton.svg" alt="plus button"
+                            src="../Assets/board/plusButton.svg" alt="plus button"
                             onclick="addTaskOnBoard(), loadContactsForDropdown()">
                     </div>
                     <div class="column" id="inProgressColumn">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="column-wrapper">
                     <div class="column-title">Await feedback <img class="cursorPointer"
-                            src="/Assets/board/plusButton.svg" alt="plus button"
+                            src="../Assets/board/plusButton.svg" alt="plus button"
                             onclick="addTaskOnBoard(), loadContactsForDropdown()">
                     </div>
                     <div class="column" id="awaitFeedbackColumn">
@@ -128,10 +128,10 @@
             }, 0);
         });
     </script>
-    <script src="/script/board.js"></script>
-    <script src="/script/boardFirebase.js"></script>
-    <script src="/script/boardTask.js"></script>
-    <script src="/script/boardDragDrop.js"></script>
+    <script src="../script/board.js"></script>
+    <script src="../script/boardFirebase.js"></script>
+    <script src="../script/boardTask.js"></script>
+    <script src="../script/boardDragDrop.js"></script>
 </body>
 
 </html>
