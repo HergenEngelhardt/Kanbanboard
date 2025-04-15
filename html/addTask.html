@@ -29,6 +29,13 @@
     <script src="../../script/contacts.js"></script>
 
 </head>
+<script>
+    document.write('<base href="' + 
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+            ? '/html/' 
+            : '/') 
+        + '">');
+</script>
 
 <body onload="loadContactsForDropdown(), renderPrioButtons()">
     <aside w3-include-html="../../templates/header.html"></aside>

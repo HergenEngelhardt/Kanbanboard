@@ -42,7 +42,14 @@
     <script src="../../script/boardPopUpEditSubtask.js" defer></script>
     <script src="../../script/boardPopUpEditContacts.js" defer></script>
     <script src="../../script/contactsDisplay.js" defer></script>
-
+</head>
+<script>
+    document.write('<base href="' + 
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+            ? '/html/' 
+            : '/') 
+        + '">');
+</script>
 <body onload="initializeBoard()">
     <aside w3-include-html="../../templates/header.html"></aside>
     <aside w3-include-html="../../templates/navbarLoggedIn.html"></aside>

@@ -15,7 +15,13 @@
     <script src="../../script/contacts.js"></script>
     <script src="../../script/header.js"></script>
 </head>
-
+<script>
+    document.write('<base href="' + 
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
+            ? '/html/' 
+            : '/') 
+        + '">');
+</script>
 <body>
     <div class="join">
     <div class="content-wrapper">
