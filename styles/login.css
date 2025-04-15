@@ -1,0 +1,258 @@
+.dnone {
+    display: none;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.join {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    left: auto;
+}
+
+.joinLogo img {
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes move-logo {
+    0% {
+        transform: translate(-50%, -50%) scale(3);
+    }
+
+    100% {
+        transform: translate(-160%, -160%) scale(1);
+    }
+}
+
+.join-login {
+    margin-top: 15%;
+}
+
+.login-joinContainer {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-joinContainer h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: 700;
+    text-underline-offset: 18px;
+    text-decoration-color: #3498db;
+    text-decoration-thickness: 2px;
+}
+
+.login-signup-button {
+    position: fixed;
+    transform: translate(100%, -400%);
+    z-index: 3000;
+    order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
+    gap: 5px;
+}
+
+.login-signup-button span {
+    white-space: nowrap;
+}
+
+.login-signup-button a {
+    text-decoration: none;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group {
+    padding-bottom: 20px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    padding: 12PX;
+    border-radius: 15px;
+    border: 1px solid #dddddd;
+    width: 100%;
+    font-size: 16px;
+}
+
+.input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.icon img {
+    cursor: pointer;
+}
+
+#passwordImg {
+    cursor: default;
+}
+
+.checkbox {
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.login-button {
+    border: 2px solid #2a2a2a;
+    background-color: #2A3647;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 600;
+    box-shadow: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.login-button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #3498db;
+    background-color: #3498db;
+    border-radius: 8px;
+    color: white;
+    padding: 10px 20px;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.login-button.guest-btn {
+    border: 2px solid #1a2b47;
+    background-color: wHITE;
+    color: #1a2b47;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+    white-space: nowrap;
+}
+
+.icon {
+    position: absolute;
+    right: 10px;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.login-button.guest-btn:hover {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+
+#login-logoContainer {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 3000;
+    animation: move-logo 1.5s ease forwards;
+}
+
+.notice_link {
+    margin-top: 80px;
+    padding-left: 40px;
+    color: #a0a0a0;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.toast {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 300px; 
+    height: 100px;
+    max-width: 90%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.toast.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toast.hide {
+    transform: translate(100%, -80%);
+    opacity: 0;
+}
+
+.legalPolicy a {
+    text-decoration: none;
+    color: lightgray !important;
+}
+
+.legalPolicy a:hover {
+    color: #3498db !important;
+}
+
+.toast.success {
+    background-color: #2A3647;
+}
+
+.toast.error {
+    background-color: #dc3545;
+}
+
+.User-Guest {
+    display: flex;
+    justify-content: center;
+}
+
+.toast p {
+    width: 235px;
+    height: 24px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFF;
+}
